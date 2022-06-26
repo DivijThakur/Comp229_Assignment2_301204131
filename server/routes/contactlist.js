@@ -4,6 +4,7 @@ let mongoose = require('mongoose');
 
 let passport = require('passport');
 
+
 // Helper function for guard purposes
 function requireAuth(req, res, next) {
     // check if user is logged in
@@ -17,7 +18,7 @@ let listController = require('../controllers/contactlist')
 /*GET Route for the contact list page- Read Operation*/
 router.get('/', requireAuth, listController.displayContactList);
 
-/*GET Route for displaying Update page- Update Operation*/
+/*GET Route for displaying Update page- Update Operation */
 router.get('/update/:id', requireAuth, listController.displayUpdatePage);
 
 /*POST Route for processing Update page- Update Operation*/
