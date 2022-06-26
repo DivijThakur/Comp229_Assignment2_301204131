@@ -1,0 +1,27 @@
+<%- include partials/header.ejs %>
+
+  <%- include partials/main_nav.ejs %>
+
+
+    <!-- Main Content -->
+    <main class="flex-shrink-0">
+      <div class="container mt-4 mb-2"
+        style="box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;">
+        <div class="row" style="height: 100%;">
+          <% if(title=="Home" ) { %>
+            <%- include partials/home %>
+              <%} else if(title=="About" ) { %>
+                <%- include partials/about %>
+                  <%} else if(title=="Services" ) { %>
+                    <%- include partials/services %>
+                      <%} else if(title=="Projects" ) { %>
+                        <%- include partials/projects %>
+                          <%} else if(title=="Contact" ) { %>
+                            <%- include partials/contact %>
+                              <% } %>
+        </div>
+    </main>
+
+    <%- include partials/bottom_nav.ejs %>
+
+      <%- include partials/footer.ejs %>

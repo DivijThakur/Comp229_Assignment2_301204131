@@ -1,0 +1,17 @@
+/* custom css goes here */
+body {
+    background-image: url('../Assets/images/bg3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Adds padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
